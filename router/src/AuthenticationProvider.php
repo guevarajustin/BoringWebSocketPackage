@@ -14,8 +14,7 @@ class AuthenticationProvider extends Thruway\Authentication\AbstractAuthProvider
 		// retrieve role
 		// return failure if invalid role provided *TBD
 		$role = $signature->role;
-		$role_is_valid = false;
-		$role_is_valid = true;
+		$role_is_valid = true; // always true since validation hasn't been implemented
 
 		if ($role_is_valid === false) {
 			return ["FAILURE"];
@@ -23,8 +22,7 @@ class AuthenticationProvider extends Thruway\Authentication\AbstractAuthProvider
 
 		// authenticate signature *TBD
 		$the_key = $signature->signature;
-		$the_key_is_valid = false;
-		$the_key_is_valid = true;
+		$the_key_is_valid = true; // always true since validation hasn't been implemented
 		if ($the_key_is_valid === false) {
 			return ["FAILURE"];
 		}

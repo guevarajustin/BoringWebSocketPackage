@@ -6,7 +6,7 @@
 
 ## Instructions
 
-* Run `router.php` directly rather than through a web server.
+* Run `router.php`
 
 ## Notes
 
